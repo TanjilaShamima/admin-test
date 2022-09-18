@@ -57,11 +57,11 @@ function CategoryFormDetails(props: CategoryFormType, ref: any) {
       .filter((key) => validateFields.includes(key))
       .forEach((key) => {
         if (!category[key as keyof typeof category]) {
-          error[key] = `必須です`;
+          error[key] = `Required`;
           isValid = false;
         }
         if (key === "priority" && category[key] <= 0) {
-          error[key] = `0より大きい整数を入力してください`;
+          error[key] = `Number should not less then 0`;
           isValid = false;
         }
       });
