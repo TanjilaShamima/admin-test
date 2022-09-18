@@ -1,0 +1,68 @@
+.sectionLogin {
+  position: relative;
+  width: 100%;
+  margin: 0px 0px 100px 0px;
+  font-family: "Roboto", "Noto Sans JP", sans-serif;
+  .title {
+    font-weight: 800;
+    text-align: center;
+    font-size: 1.5rem;
+  }
+  .innerTitle {
+    font-weight: 600;
+    text-align: center;
+    font-size: 1.2rem;
+  }
+  .sectionTitle {
+    padding-bottom: 40px;
+    position: relative;
+  }
+  .sectionBody {
+    max-width: 640px;
+    position: relative;
+    margin: 0 auto;
+    width: calc(100% - 16px * 2);
+    box-sizing: border-box;
+    .loginBlock {
+      background: #f7f7f7;
+      box-sizing: border-box;
+      padding: 60px;
+      box-shadow: -1px 1px 9px 3px #888888;
+      border-radius: 5px;
+      .loginBody {
+        margin: 20px 0px;
+      }
+    }
+    .inputDescription {
+      font-size: 14px;
+    }
+    .centerDescription {
+      font-size: 15px;
+      text-align: center;
+    }
+    .loginButton {
+      background-color: black;
+      color: white;
+      height: 46px;
+      width: 100px;
+      font-size: 15px;
+      margin: 10px 0px;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    .footer {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .signUpButton {
+      height: 46px;
+      width: 100%;
+      font-size: 15px;
+      margin: 30px 0px;
+      border-radius: 5px;
+      padding: 0px 20px;
+      cursor: pointer;
+    }
+  }
+}

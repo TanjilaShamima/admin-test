@@ -1,0 +1,96 @@
+.selectWrap {
+  position: relative;
+}
+.selectWrap select {
+  padding-right: 40px;
+}
+.selectWrap::after {
+  width: 10px;
+  height: 10px;
+  border-style: solid;
+  border-width: 2px;
+  border-color: transparent;
+  transform: rotate(45deg);
+  content: '';
+  box-sizing: border-box;
+  left: auto;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  right: 12px;
+  border-bottom-color: #333;
+  border-right-color: #333;
+  pointer-events: none;
+}
+.selectWrapper {
+  position: relative;
+}
+.selectWrapper select {
+  padding-right: 62px;
+  height: auto !important;
+}
+
+.selectWrapper::after {
+  width: 10px;
+  height: 10px;
+  border-style: solid;
+  border-width: 2px;
+  border-color: transparent;
+  transform: rotate(45deg);
+  content: '';
+  box-sizing: border-box;
+  left: auto;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  right: 12px;
+  border-bottom-color: #333;
+  border-right-color: #333;
+  pointer-events: none;
+}
+
+.select {
+  padding: 5px 18px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  outline: none;
+  display: block;
+  font-family: 'Roboto Condensed', 'Noto Sans JP', sans-serif;
+  font-weight: 500;
+  width: 100%;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  color: #333;
+  background: #f7f7f7;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  -ms-border-radius: 0;
+  -o-border-radius: 0;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  line-height: 32px;
+  border-radius: 4px;
+  font-size: 1rem;
+}
+.error {
+  border: 1px solid red;
+}
+.errorText {
+  color: red;
+}
+
+@media (min-width: 1024px) and (max-width: 1450px) {
+  .selectWrap {
+    select {
+      font-size: 15px;
+    }
+  }
+  .selectWrapper {
+    select {
+      font-size: 15px;
+    }
+  }
+}

@@ -1,0 +1,36 @@
+.paginationWrapper {
+  .paginationButton {
+    padding: 20px 0px 5px 0px;
+    display: flex;
+    justify-content: center;
+    .button,
+    .buttonHere {
+      width: 2rem;
+      height: 2rem;
+      box-sizing: border-box;
+      margin-left: 12px;
+      cursor: pointer;
+      &:hover {
+        background: #e60012;
+      }
+    }
+    .button {
+      background: #999;
+      color: #fff;
+    }
+    .buttonHere {
+      background: #e60012;
+      color: #fff;
+    }
+    a {
+      text-decoration: none;
+    }
+    .pageText {
+      color: white;
+      height: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+  }
+}

@@ -1,0 +1,377 @@
+.mainContainer {
+  .container {
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    .newAddMobile {
+      display: none;
+    }
+    .allData {
+      width: 100%;
+      margin: 10px auto;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      position: relative;
+      h3 {
+        text-align: center;
+        color: indigo;
+        margin: 10px 0px 50px 0px;
+        font-weight: bolder;
+      }
+      .tableData {
+        width: 100%;
+        thead {
+          tr {
+            border-bottom: 1px solid #e5e5e5;
+            th {
+              font-size: 16px;
+              color: indigo;
+            }
+          }
+        }
+        tr {
+          background-color: transparent;
+          &:not(:last-child) {
+            border-bottom: 1px solid #e5e5e5;
+          }
+          td:nth-child(1) {
+            width: 30%;
+          }
+        }
+        td,
+        th {
+          padding: 10px;
+          text-align: center;
+        }
+        .action {
+          text-align: center;
+        }
+        .actionButton {
+          display: flex;
+          justify-content: center;
+        }
+        .goodsRow {
+          input.mainCheck {
+            appearance: auto !important;
+            width: 20px;
+            height: 20px;
+            padding: 0;
+          }
+        }
+      }
+      .pagination {
+        width: 100%;
+      }
+      .noData {
+        width: 100%;
+        font-size: 30px;
+        text-align: center;
+        margin: 20px 0px;
+        color: rgb(99, 62, 62) !important;
+        margin-left: 30%;
+      }
+    }
+    .addButton {
+      width: 150px;
+      height: 40px;
+      background-color: #f5f5f5;
+      border-radius: 7px;
+      margin: 0px 5px;
+      border: 1px solid #363232;
+      cursor: pointer;
+      &:hover {
+        background-color: #e5e5e5;
+      }
+    }
+    .edit {
+      width: 100px;
+      height: 30px;
+      background-color: #00800075;
+    }
+    .delete {
+      width: 100px;
+      height: 30px;
+      background-color: #ff000052;
+    }
+    .view {
+      width: 100px;
+      height: 30px;
+      background-color: #2200ff52;
+    }
+    .newItem {
+      position: absolute;
+      top: 10px;
+      right: 10px;
+    }
+  }
+  .inputContainer {
+    width: 80%;
+    margin: 20px auto;
+    .form {
+      display: block;
+      overflow: hidden;
+      .formData {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 5px auto;
+        label {
+          width: 30%;
+        }
+        .input {
+          width: 70%;
+        }
+        .errorMessage {
+          color: red;
+          margin-left: 30%;
+        }
+      }
+    }
+  }
+  .inputDataContainer {
+    width: 100%;
+    .formData {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      .label {
+        width: 20%;
+      }
+      .inputField {
+        width: 80%;
+      }
+    }
+    .formSliderData {
+      margin-top: 10px;
+      .label {
+        width: 20%;
+      }
+      .inputField {
+        width: 80%;
+      }
+    }
+  }
+  .errorMessage {
+    color: red;
+    margin-left: 30%;
+  }
+  .editText {
+    display: flex;
+    justify-content: flex-end;
+  }
+  .updateButton {
+    background-color: whitesmoke;
+    color: black;
+    border: 1px solid #36323282;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    padding: 7px 30px;
+    &:hover {
+      background-color: #e5e5e5;
+      color: black;
+    }
+  }
+}
+
+.tableLoader {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.buttonContainer {
+  .submitButton {
+    width: 200px;
+    height: 40px;
+    background-color: #f5f5f5;
+    border-radius: 7px;
+    border: 1px solid #363232;
+    margin-top: 20px;
+    margin-left: 28%;
+    cursor: pointer;
+    &:hover {
+      background-color: #e5e5e5;
+    }
+  }
+  .submitRichTextButton {
+    margin-left: 20%;
+  }
+  .tagButton {
+    margin-left: 33% !important;
+  }
+}
+
+/* Category Slider Goods Table start */
+
+.richTextField {
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+  margin-bottom: 4px;
+  .label {
+    width: 26%;
+  }
+  .richTextTable {
+    width: 100%;
+  }
+}
+
+.goodsTable {
+  height: 200px;
+  overflow-y: auto;
+  margin-bottom: 20px;
+  margin-top: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.arrowContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.upArrow {
+  color: #797982;
+  cursor: pointer;
+  font-size: 18px;
+  font-weight: 900;
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+  &:hover {
+    background-color: #797982;
+    color: white;
+  }
+}
+
+.downArrow {
+  color: #797982;
+  cursor: pointer;
+  font-size: 18px;
+  font-weight: 900;
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+  &:hover {
+    background-color: #797982;
+    color: white;
+  }
+}
+
+.richEditorEditBtn {
+  margin-left: auto;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  margin-bottom: 5px;
+  width: 100px;
+  height: 30px;
+  background-color: #f5f5f5;
+  border-radius: 7px;
+  border: 1px solid #363232;
+  cursor: pointer;
+  &:hover {
+    background-color: #e5e5e5;
+  }
+}
+
+.dateInput {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  & > div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .formData {
+    width: 100%;
+  }
+}
+
+.checkboxField {
+  display: flex;
+  align-items: center;
+  label {
+    height: 48px;
+  }
+}
+
+/* Category Slider Goods Table end */
+
+@media (max-width: 375px) {
+  .mainContainer {
+    .container {
+      .allData {
+        .tableData {
+          .actionButton {
+            font-size: 12px;
+            padding: 10px 0px;
+            .addButton {
+              width: 50px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .mainContainer {
+    .container {
+      display: block;
+      .newAddMobile {
+        display: flex;
+        justify-content: flex-end;
+        padding-right: 3%;
+      }
+      .newItem {
+        display: none;
+      }
+      .allData {
+        width: 90%;
+        .tableData {
+          .subcategoryHead {
+            th {
+              font-size: 14px;
+            }
+          }
+          td {
+            font-size: 14px;
+          }
+        }
+      }
+      .edit,
+      .view,
+      .delete {
+        width: 60px;
+        height: 20px;
+      }
+    }
+    .inputContainer {
+      width: 100%;
+      .form {
+        .formData {
+          display: block;
+          padding: 20px 10%;
+          label {
+            width: 100%;
+            font-size: 16px;
+          }
+          .input {
+            width: 100%;
+            height: 40px;
+          }
+        }
+        .submitButton {
+          width: 100px;
+          margin-right: 10%;
+        }
+      }
+    }
+  }
+}

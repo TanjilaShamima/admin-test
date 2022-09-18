@@ -1,0 +1,66 @@
+[
+  {
+    "catId": "1",
+    "name": "Category-1",
+    "description": "How to find the right philosophy for your specific product service",
+    "priority": 1,
+    "image": "",
+    "courses": []
+  },
+  {
+    "id": "2",
+    "name": "Category-1",
+    "description": "How to find the right philosophy for your specific product service",
+    "priority": 2,
+    "image": "",
+    "courses": []
+  },
+  {
+    "id": "3",
+    "name": "Category-1",
+    "description": "How to find the right philosophy for your specific product service",
+    "priority": 3,
+    "image": "",
+    "courses": []
+  },
+  {
+    "id": "4",
+    "name": "Category-1",
+    "description": "How to find the right philosophy for your specific product service",
+    "priority": 4,
+    "image": "",
+    "courses": []
+  },
+  {
+    "id": "5",
+    "name": "Category-1",
+    "description": "How to find the right philosophy for your specific product service",
+    "priority": 5,
+    "image": "",
+    "courses": []
+  },
+  {
+    "id": "6",
+    "name": "Category-1",
+    "description": "How to find the right philosophy for your specific product service",
+    "priority": 6,
+    "image": "",
+    "courses": []
+  },
+  {
+    "id": "7",
+    "name": "Category-7",
+    "description": "How to find the right philosophy for your specific product service",
+    "priority": 7,
+    "image": "",
+    "courses": []
+  },
+  {
+    "id": "8",
+    "name": "Category-1",
+    "description": "How to find the right philosophy for your specific product service",
+    "priority": 8,
+    "image": "",
+    "courses": []
+  }
+]

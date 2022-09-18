@@ -1,0 +1,102 @@
+.imageWrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+  img {
+    width: 100%;
+    height: 150px;
+  }
+}
+
+.inputWrapper {
+  display: flex;
+  justify-content: space-between;
+  gap: 15px;
+  label {
+    width: 31%;
+  }
+}
+
+.inputSliderImage {
+  display: flex;
+  justify-content: space-between;
+  gap: 15px;
+  label {
+    width: 17%;
+  }
+}
+
+.imageCard {
+  width: 150px;
+  position: relative;
+  margin-top: 10px;
+  &:hover {
+    .remove {
+      display: flex;
+    }
+  }
+}
+.progress {
+  position: absolute;
+  z-index: 0;
+  left: 0;
+  width: 100%;
+  border-radius: 0;
+  height: 8px;
+}
+
+.remove {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+  left: calc(50% - 60px / 2);
+  top: calc(50% - 60px / 2);
+  font-size: 22px;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background: gray;
+  text-align: center;
+  display: none;
+  cursor: pointer;
+
+  span {
+    position: relative;
+    top: -3px;
+  }
+}
+
+.checkMainImage {
+  position: absolute;
+  z-index: 3;
+  top: 12px;
+  right: 0;
+}
+
+input.mainImageCheck {
+  appearance: auto !important;
+  width: 20px;
+  height: 20px;
+  padding: 0;
+}
+
+.errorMessage {
+  color: red;
+  margin-left: 32%;
+}
+
+.cropButton {
+  display: flex;
+  justify-content: flex-end;
+  button {
+    padding: 8px 10px;
+    border-radius: 5px;
+    background: rgb(128, 0, 70);
+    color: white;
+    margin: 20px 0px;
+    cursor: pointer;
+  }
+}

@@ -1,0 +1,26 @@
+.menuContents {
+  padding: 20px;
+  width: 100%;
+}
+
+.container {
+  background-color: whitesmoke;
+  height: 80px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.logo {
+  height: 30px;
+  cursor: pointer;
+  margin-left: 20px;
+}
+.layout {
+  display: flex;
+}
+
+@media (max-width: 768px) {
+  .menuContents {
+    padding: 20px 5px;
+  }
+}

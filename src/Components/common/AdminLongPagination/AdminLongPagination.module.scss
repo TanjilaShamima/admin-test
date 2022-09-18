@@ -1,0 +1,57 @@
+.container {
+  display: flex;
+  gap: 5px;
+  margin: 15px auto 5px auto;
+  align-items: center;
+  justify-content: center;
+  .button {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    outline: none;
+    border: none;
+    background: rgb(55, 86, 133);
+    &:hover {
+      background: rgb(55, 86, 133);
+      img {
+        filter: brightness(0) invert(1);
+      }
+    }
+  }
+  .pageItemWrapper {
+    display: flex;
+    padding: 0;
+    background: #f0f0f0;
+    border-radius: 20px;
+    padding-left: 5px;
+    padding-right: 5px;
+    .item {
+      width: 35px;
+      height: 35px;
+      border-radius: 5px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      cursor: pointer;
+      transition: all 0.2s ease;
+      &:hover {
+        color: rgb(55, 86, 133);
+      }
+    }
+    .active {
+      background: rgb(55, 86, 133);
+      color: white;
+      cursor: default;
+      transform: scale(1.05);
+      font-weight: 700;
+      &:hover {
+        color: white;
+      }
+    }
+  }
+}

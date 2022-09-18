@@ -1,0 +1,30 @@
+.tabControl {
+  width: 100%;
+  position: relative;
+}
+.tabs {
+  display: flex;
+  align-items: center;
+  margin-bottom: 16px;
+}
+
+.tabBtn {
+  cursor: pointer;
+  height: 56px;
+  padding: 0 16px;
+  box-sizing: border-box;
+  border-radius: 4px 4px 0 0;
+  border: 1px solid #999;
+  border-bottom: 0;
+  margin-right: 4px;
+  display: flex;
+  align-items: center;
+  &:not(:last-child) {
+    margin-right: 4px;
+  }
+}
+
+.activeTab {
+  background: #999;
+  color: #fff;
+}

@@ -1,0 +1,54 @@
+.mainDeleteWrapper {
+  .deleteWrapper {
+    padding: 6% 7%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    .deleteTitle {
+      font-size: 16px;
+      font-weight: bold;
+    }
+    .buttonContainer {
+      display: flex;
+      margin-top: 20px;
+      justify-content: flex-end;
+      margin-right: 4%;
+      .cancelButton {
+        width: 90px;
+        height: 35px;
+        background-color: #f5f5f5;
+        border-radius: 7px;
+        border: 1px solid #363232;
+        margin-left: 10px;
+        cursor: pointer;
+        &:hover {
+          background-color: #e5e5e5;
+        }
+      }
+      .confirmButton {
+        width: 90px;
+        height: 35px;
+        background-color: #00800075;
+        border-radius: 7px;
+        border: 1px solid #363232;
+        cursor: pointer;
+        &:hover {
+          background-color: #e5e5e5;
+          color: black;
+        }
+      }
+    }
+    .confirmButton {
+      width: 90px;
+      height: 35px;
+      background-color: #00800075;
+      border-radius: 7px;
+      border: 1px solid #363232;
+      cursor: pointer;
+      &:hover {
+        background-color: #e5e5e5;
+        color: black;
+      }
+    }
+  }
+}

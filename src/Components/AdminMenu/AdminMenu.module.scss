@@ -1,0 +1,32 @@
+.menuWrapper {
+  font-size: 20px;
+  background-color: whitesmoke;
+  width: 20%;
+  font-size: 17px;
+  min-height: 100vh;
+}
+.menuItems {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+  min-width: 180px;
+  cursor: pointer;
+  &:hover {
+    background-color: #e5e5e5;
+  }
+}
+
+.activeMenu {
+  background: rgb(187, 187, 187) !important;
+}
+
+@media (max-width: 768px) {
+  .menuWrapper {
+    justify-content: space-around;
+    .menuItems {
+      min-width: unset;
+      width: 33%;
+    }
+  }
+}
